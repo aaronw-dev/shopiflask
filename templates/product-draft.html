@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Template - TEST</title>
+    <link rel="stylesheet" href="/static/style/font.css">
+    <link rel="stylesheet" href="/static/style/style.css">
+    <link rel="stylesheet" href="/static/style/product.css">
+
+    <meta name="keywords" content="hack,club,hackclub,shop,merch,swag">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+
+    <meta name="author" content="awdev">
+
+    <meta name="title" content="eCommerce Template - TEST">
+    <meta property="og:title" content="eCommerce Template - TEST">
+
+    <meta name="description" content="{{SHORT_DESCRIPTION}}">
+    <meta property="og:description" content="{{SHORT_DESCRIPTION}}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://hackclub.com">
+
+    <meta name="theme-color" content="#ec3750">
+
+    <meta property="og:image" content="{{PRODUCT_MAINIMAGE}}">
+    <meta name="twitter:card" content="{{PRODUCT_MAINIMAGE}}">
+
+    <link href="/static/images/logo/bag.svg" rel="icon">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script src="/static/script/global.js"></script>
+    <script src="/static/script/product.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="https://awdev.co">Test</a>
+    </nav>
+    <div class="product-info-container">
+        <div class="product-image-container">
+            <div class="product-main-image">
+                <img src="/static/images/products/stickerpile.png">
+            </div>
+            <div class="product-image-list">
+                <img src="/static/images/products/stickerpile.png">
+            </div>
+        </div>
+        <span id="product-meta" product_id="{{PRODUCT_ID}}" product_title="{{PRODUCT_TITLE}}"></span>
+        <div class="product-data-container">
+            <h1 id="product-name">Test Product</h1>
+            <div class="star-rating">
+                <img src="/static/images/icons/star-full.svg">
+                <img src="/static/images/icons/star-full.svg">
+                <img src="/static/images/icons/star-full.svg">
+                <img src="/static/images/icons/star-full.svg">
+                <img src="/static/images/icons/star-half.svg">
+                <span id="rating-text">(12K)</span>
+            </div>
+            <span id="product-price">$25.99</span>
+            <p id="product-description">
+                This is a description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae
+                quibusdam accusantium laboriosam eos excepturi.
+            </p>
+            <div class="stock-counter">
+                <img class=".stock-image" src="/static/images/icons/stock-ping.svg">
+                <span id="stock-count">201</span>
+                <span>in stock</span>
+            </div>
+            <div class="purchase-buttons">
+                <button class="add-to-basket" id="cart_button">Add to basket</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="expandables">
+                <div class="expandable-item">
+                    <div class="expandable-header collapsible">
+                        <span class="expandable-title">Description</span>
+                        <span class="expandable-indicator">+</span>
+                    </div>
+                    <p style="display:none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore corrupti nostrum iure optio
+                        adipisci officia doloribus! Aliquam, dolorem voluptatibus?
+                    </p>
+                </div>
+                <div class="expandable-item">
+                    <div class="expandable-header collapsible">
+                        <span class="expandable-title">Features</span>
+                        <span class="expandable-indicator">+</span>
+                    </div>
+                    <p style="display:none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore corrupti nostrum iure optio
+                        adipisci officia doloribus! Aliquam, dolorem voluptatibus?
+                    </p>
+                </div>
+            </div>
+            <div class="buywith">
+                <div class="buywith-text">
+                    <span class="buywith-title">Buy it with</span>
+                    <span id="buywith-productname">Pile of stickers</span>
+                    <button class="add-to-basket" onclick="alert('buy!')">Add to basket</button>
+                </div>
+                <img src="/static/images/products/stickerpile.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Phantom Sans";
+    src: url(./font/PhantomSans_Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Phantom Sans";
+    src: url(./font/PhantomSans_Italic.otf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Phantom Sans";
+    src: url(./font/PhantomSans_Bold.otf);
+    font-weight: bold;
+}

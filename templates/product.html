@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Template - {{PRODUCT_TITLE}}</title>
+    <link rel="stylesheet" href="/resources/style/font.css">
+    <link rel="stylesheet" href="/resources/style/style.css">
+    <link rel="stylesheet" href="/resources/style/product.css">
+
+    <meta name="keywords" content="hack,club,hackclub,shop,merch,swag">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+
+    <meta name="author" content="awdev">
+
+    <meta name="title" content="eCommerce Template - {{PRODUCT_TITLE}}">
+    <meta property="og:title" content="eCommerce Template - {{PRODUCT_TITLE}}">
+
+    <meta name="description" content="{{SHORT_DESCRIPTION}}">
+    <meta property="og:description" content="{{SHORT_DESCRIPTION}}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://hackclub.com">
+
+    <meta name="theme-color" content="#ec3750">
+
+    <meta property="og:image" content="{{PRODUCT_MAINIMAGE}}">
+    <meta name="twitter:card" content="{{PRODUCT_MAINIMAGE}}">
+
+    <link href="/resources/images/logo/bag.svg" rel="icon">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script src="/resources/script/global.js"></script>
+    <script src="/resources/script/product.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="https://awdev.co">Test</a>
+    </nav>
+    <div class="product-info-container">
+        <div class="product-image-container">
+            <div class="product-main-image">
+                <img src="{{PRODUCT_IMAGES[0]['src']}}">
+            </div>
+            <div class="product-image-list">
+                {% for image in PRODUCT_IMAGES %}
+                <img src="{{ image['src'] }}">
+                {% endfor %}
+            </div>
+        </div>
+        <span id="product-meta" product_id="{{PRODUCT_ID}}" product_title="{{PRODUCT_TITLE}}"></span>
+        <div class="product-data-container">
+            <h1 id="product-name">{{PRODUCT_TITLE}}</h1>
+            <div class="star-rating">
+                <img src="/resources/images/icons/star-full.svg">
+                <img src="/resources/images/icons/star-full.svg">
+                <img src="/resources/images/icons/star-full.svg">
+                <img src="/resources/images/icons/star-full.svg">
+                <img src="/resources/images/icons/star-half.svg">
+                <span id="rating-text">(12K)</span>
+            </div>
+            <span id="product-price">{{PRODUCT_PRICE}}</span>
+            <p id="product-description">
+                {{SHORT_DESCRIPTION}}
+            </p>
+            <div class="stock-counter">
+                <img class=".stock-image" src="/resources/images/icons/stock-ping.svg">
+                <span id="stock-count">{{PRODUCT_STOCK}}</span>
+                <span>in stock</span>
+            </div>
+            <div class="purchase-buttons">
+                <button class="add-to-basket" id="cart_button">Add to basket</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="expandables">
+                <div class="expandable-item">
+                    <div class="expandable-header collapsible">
+                        <span class="expandable-title">Description</span>
+                        <span class="expandable-indicator">+</span>
+                    </div>
+                    <p style="display:none">
+                        {{PRODUCT_DESCRIPTION}}
+                    </p>
+                </div>
+                <div class="expandable-item">
+                    <div class="expandable-header collapsible">
+                        <span class="expandable-title">Features</span>
+                        <span class="expandable-indicator">+</span>
+                    </div>
+                    <p style="display:none">
+                        {{PRODUCT_DESCRIPTION}}
+                    </p>
+                </div>
+            </div>
+            <div class="buywith">
+                <div class="buywith-text">
+                    <span class="buywith-title">Buy it with</span>
+                    <span id="buywith-productname">Pile of stickers</span>
+                    <button class="add-to-basket" onclick="alert('buy!')">Add to basket</button>
+                </div>
+                <img src="/resources/images/products/stickerpile.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
